@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="../estilos/font.css">
+    <link rel="stylesheet" href="../estilos/style-cont.css">
+    <link rel="shortcut icon" href="../img/python.jpg" type="image/x-icon">
+  </head>
+
+<body>
+  
+    <div class ="superior">
+      
+       <a href="../index.html" class="botones"> <i class="icon-home icon"></i> </a>
+       <a href="../javascript/principalJs.html" class="botones"> <i class="icon-javascript icon"></i> Javascript</a>
+    </div>  
+    
+    <main>
+      <div class="izquierdo">
+        
+        <h1><strong> TEMARIO</strong></h1>
+  
+        <div class="temas">
+          <div class="container">
+            <div class="principal" ><p >INTRODUCCIÓN</p></div>
+            
+           <div class="caja" id="caja0">
+            <ul class = "lista">
+              <li><a class="secundario" href="python.html"> ¿Qué es Python?</a></li>
+              <li><a class="secundario"  href="historia.html">Breve Historia</a></li>
+              <li><a class="secundario" href="glosario.html">Glosario Básico</a></li>
+              <li class="test1"><a href="pruebas/quiz1.html" > <i class="icon-pencil"></i> TEST</a></li>
+            </ul>
+            </div>
+                    
+        </div>
+  
+        <div class="container">
+          <div class="principal" ><p >PROGRAMACIÓN BÁSICA</p></div>
+          
+          <div class="caja" id="caja1">
+          <ul class = "lista">
+            <li><a class="secundario" href="variables.html">Variables</a></li>
+              <li><a class="secundario" href="constantes.html">Constantes</a>
+              <li><a class="secundario" href="tipos.html">Tipos de datos</a>
+              </li>
+                
+              <li class="test1"><a href="pruebas/quiz2.html"><i class="icon-pencil"></i>TEST</a></li>
+          </ul>
+          </div>
+                  
+      </div>
+  
+        
+      <div class="container">
+        <div class="principal" ><p >CONTROLES DE FLUJO</p></div>
+        
+        <div class="caja" id="caja2">
+        <ul class = "lista">
+          <li><a class="secundario" href="condicionales.html">Condicionales</a></li>
+              <li><a class="secundario" href="ciclos.html">Ciclos</a></li>       
+              <li><a class="secundario" href="ternario.html">Operador Ternario</a></li>
+                
+              <li class="test1"><a href="pruebas/quiz3.html"><i class="icon-pencil"></i>TEST</a></li>
+        </ul>
+        </div>
+                
+    </div>
+  
+    <div class="container">
+      <div class="principal" ><p >FUNCIONES</p></div>
+      
+      <div class="caja" id="caja3">
+      <ul class = "lista">
+        <li><a class="secundario" href="funciones_texto.html">Funciones para Cadenas de Texto</a></li>
+        <li><a class="secundario" href="funciones_array.html">Funciones para Arrays</a></li>
+        <li><a class="secundario" href="funciones_numeros.html">Funciones para Números</a></li>
+           
+              <li class="test1"><a href="pruebas/quiz4.html"> <i class="icon-pencil"></i>TEST</a></li>
+      </ul>
+      </div>
+              
+  </div>
+  <div class="container">
+    <div class="principal" ><p >ESTRUCTURAS DE DATOS</p></div>
+    
+    <div class="caja" id="caja4">
+    <ul class = "lista">
+      <li><a class="secundario" href="listas.html">Listas</a></li>
+      <li><a class="secundario" href="conjuntos.html">Conjuntos</a></li>
+      <li><a class="secundario" href="diccionarios.html">Diccionarios</a></li>
+      <li><a class="secundario" href="tuplas.html">Tuplas</a></li>
+          
+            <li class="test1"><a href="pruebas/quiz5.html"> <i class="icon-pencil"></i>TEST</a></li>
+    </ul>
+    </div>
+            
+  </div>
+
+  <div class="container">
+    <div class="principal" ><p >PROGRAMACIÓN ORIENTADA A OBJETOS</p></div>
+    
+    <div class="caja" id="caja5">
+    <ul class = "lista">
+      <li><a class="secundario" href="clases.html">Creación de Clases</a></li>
+      <li><a class="secundario" href="constructor.html">Constructor</a></li>
+      <li><a class="secundario" href="metodos.html">Métodos</a></li> 
+      <li><a class="secundario" href="herencia.html">Herencia</a></li>      
+            <li class="test1"><a href="pruebas/quiz6.html"> <i class="icon-pencil"></i>TEST</a></li>
+    </ul>
+    </div>
+            
+  </div>
+  <div class="container">
+    <div class="principal" ><p >OTRAS UTILIDADES</p></div>
+    
+    <div class="caja activo" id="caja6">
+    <ul class = "lista">
+      <li><a class="secundario" href="escritura.html">Escritura de archivos</a></li>
+      <li><a class="secundario actual" href="lectura.html">Lectura de archivos</a></li> 
+      <li><a class="secundario" href="excepciones.html">Manejo de Excepciones</a></li>   
+      <li><a class="secundario" href="modulos.html">Creación de módulos</a></li>    
+            <li class="test1"><a href="pruebas/quiz7.html"> <i class="icon-pencil"></i>TEST FINAL</a></li>
+    </ul>
+    </div>
+            
+  </div>
+        
+        </div>
+      </div>
+      <div class ="derecho">
+        
+         <h1 class="title">Lectura de archivos de texto</h1>
+        
+       
+         
+  
+         <p class="texto">Con Python somos capaces de hacer programas que trabajen con
+          información contenida en un archivo, para eso primero debemos hacer que
+          nuestro programa lea tal información. <br><br>
+          La función open() se encarga de la manipulación de archivos en python.
+          Normalmente usa dos argumentos, el primero será el nombre del archivo con el
+          que se quiere trabajar y su extensión (como un string) . De esta forma el
+          archivo debera estar en el mismo directorio que el del código fuente de nuestro
+          programa. Si el archivo con el que se quiere trabajar no está en el mismo
+          directorio que nuestro código fuente, podemos coloca como primer argumento la
+          ruta absoluta del archivo (como un string) . <br><br>
+          Como segundo argumento se debe colocar el modo de acceso del archivo,
+          si quiere leer, colocamos entre comillas simples o dobles en minúsculas la letra r
+          (como un string). Si se quiere escribir en él debemos colocar como segundo
+          argumento una w (como un string). <br><br>
+          Para manejar el archivo, se crea una variable y se iguala a la función open
+          con sus respectivos argumentos. Con esa variable durante todo el código nos
+          referiremos al archivo que que abrimos con la función open . Si queremos
+          añadir información en un archivo debemos abrirlo en modo de escritura si tan
+          solo queremos trabajar con la información que se encuentre en el archivo lo
+          abrimos en el modo escritura. <br><br>
+          Imaginemos que queremos abrir un archivo foo.txt en modo lectura y que está
+          en el mismo directorio que nuestro código fuente. <br><br>
+          Se hace lo siguiente:
+          
+        
+        </p>
+
+        <img src ="../img/lectura1.jpg" class="imagen" >
+
+        <p class="texto">La función read() se encarga de retornar todo el contenido de un archivo.
+          por tanto si se coloca dentro de la función print() se estaría imprimiendo todo el
+          contenido del archivo.</p>
+
+        <img src ="../img/lectura2.jpg" class="imagen" >
+
+        <p class="texto">Dentro de los paréntesis de la función read podemos colocar un número entero
+          que indica la cantidad de caracteres del archivo a retornar. </p>
+
+          <img src ="../img/lectura3.jpg" class="imagen" >
+
+          <p class="texto">Se mandó a retornar solo 4 caracteres, por tanto se termina imprimiendo solo
+            los 4 primeros caracteres del archivo que corresponde a la palabra vaca. <br><br>
+            Veamos la función readlines(), que retorna una lista de strings del archivo. <br><br>
+            Hay que entender que cuando por ejemplo escribimos en un archivo de
+            texto, cada línea es un string, cuando se presiona enter para escribir en otra
+            línea, estamos es generado un salto de línea ( \n ) y luego el cursor se
+            posiciona en la siguiente línea. Entonces la primera línea del archivo foo.txt es
+            una cadena de caracteres que tiene como último carácter un \n implícito. </p>
+
+            <img src ="../img/lectura4.jpg" class="imagen" >
+
+            <p class="texto">Ahora veamos la función readline() (no confundir con readlines() que termina en
+              s) esta función retorna el string actual, es decir la línea actual del archivo,
+              luego de usarla, el programa se sitúa en la siguiente línea, de modo que al
+              volver usarla, la función retornara la siguiente línea del archivo. </p>
+
+              <img src ="../img/lectura5.jpg" class="imagen" >
+
+              <p class="texto">Se utilizó tal función dos veces, y en cada ocasión se mandó a imprimir lo que
+                retornaba eliminando el salto de línea de cada string (línea), por tanto en la
+                salida se imprimieron las dos primeras líneas del archivo.</p>
+      </div>
+  
+  
+        </main>
+<script src="../js/main.js"></script>
+        
+</body>
+</html>
