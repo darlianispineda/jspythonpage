@@ -347,11 +347,11 @@
       }
 
       .preguntas img {
-        width: 400px !important;
+        max-width: 400px !important;
+        max-height: 200px;
         display: block;
         margin: 0 auto;
       }
-
     }
   </style>
 </head>
@@ -481,26 +481,27 @@
     // Objeto contenedor preguntas, opciones, selecciones etc
 
     let objetoPreguentas = [
-      { pregunta: "Javascript es considerado un lenjuague de programación...", opciones: ["Interpretado", "Basado en prototipos", "Imperativo", "Lenguaje de bajo nivel"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript fue desarrollado por?", opciones: ["Brendan Eich", "Dennis Ritchie", "James Gosling", "Ryan Lienhart Dahl"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cual de los siguientes son metodos de array?', opciones: ["slice()", "splice()", "indexOf()", "substring()"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?", opciones: ["let colors=['red','blue','red']", "let colors={1:'red',2:'blue',3:'red'})", "let colors=('red','blue','red')", "let colors=['red','blue','red']", 'let colors= new Set(["red", "blue", "red"])'], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cuales son los metodos para agregar o eliminar 1 elemento al inicio y el final de un array?', opciones: ["pop(),push(), shift(), unshift() ", "concat(), splice(), pop(), ", "shift(), unshift()", "pop(),push()"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione la opcion adecuada para acceder al elemento 11 del array mostrado en la imagen', opciones: ["arr[3][0][1]", "arr[3][0] ", "arr[3]", ""], multiple: false, seleccion: [], img: "img/accedermatriz.png", opcionesAleatorias: [] },
+      { pregunta: 'Para actualizar la propiedad name en el siguiente objeto a "Happy Camper" ¿Que opcion se debe seleccionar?', opciones: ['ourDog.name = "Happy Camper"', 'ourDog[name] = "Happy Camper"', 'ourDog.[name] = "Happy Camper"', ''], multiple: false, seleccion: [], img: "img/updateobjeto.png", opcionesAleatorias: [] },
 
-      { pregunta: "¿Dentro de qué elemento HTML ponemos JavaScript?", opciones: ["<script>", "<javascritp>", "<html>", "<body>"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Que opcion se debe seleccionar para eliminar la propiedad "bark" del siguiente objeto?', opciones: [' delete ourDog.bark', 'ourDog.bark = 0', 'ourDog.bark = ""', ''], multiple: false, seleccion: [], img: "img/deleteprop.png", opcionesAleatorias: [] },
 
-      {
-        pregunta: "¿Cómo se puede agregar un comentario en un JavaScript?", opciones: ["//Este es un comentario", "<!--Este es un comentario--->", "Este es un comentario", "#Este es un comentario"], multiple: false, seleccion: [], img: "", opcionesAleatorias: []
-      },
-      { pregunta: "¿Cuando se declaran variables de JavaScript, que valor inicial tienen?", opciones: ["undefined", "null", "NaN", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿La siguiente imagen muestra un objeto?', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "img/matrizuobjeto.png", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript distingue entre mayúsculas y minúsculas?", opciones: ["true", "false", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Para obtener el valor de la propiedad forder2 en el siguiente objeto anidado se selecciona la siguiente opcion "ourStorage.cabinet["topdrawer"].folder2"?', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "img/objetosanidados.png", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione algunas caracteristicas de hasOwnProperty', opciones: ['Devuelve un booleano indicando si el objeto tiene la propiedad especificada', 'no verifica la cadena prototipo del objeto', 'JavaScript no protege el nombre de la propiedad', 'No existe la posibilidad de que un objeto pudiera tener un propiedad con ese nombre'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Si se realiza una operación matemática en una con una variable no inicializada, ¿Cual sera su resultado? ", opciones: ["NaN", "null", "undefined", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione algunas caracteristicas de map()', opciones: ['Crea una nueva matriz con el resultado de llamar a una función para cada elemento de la matriz', 'Llama a la función proporcionada una vez para cada elemento de una matriz, en orden.', 'No ejecuta la función para elementos vacíos', 'Cambia la matriz original'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Declara una variable de alcance local con ámbito de bloque, la cual, opcionalmente, puede ser inicializada con algún valor", opciones: ["let", "var", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cuales son algunas de las diferencias entre Objects y Maps ?', opciones: ['Las claves de un Object son Strings y Symbols, mientras que para un Map pueden ser de cualquier tipo, incluyendo funciones, objetos y cualquier otro tipo primitivo', 'Puedes saber facilmente el tamaño de un Map usando la propiedad size, mientras que le número de propiedades en un Object tiene que ser deternminado manualmente', 'Un Map es un iterable lo que permite iterar directamente sobre el, mientras que si queremos iterar sobre un Object necesitamos obtener primero las claves de alguna forma para después iterar sobre el.', 'Puedes saber facilmente el tamaño de un Map usando la propiedad size, mientras que le número de propiedades en un Object utilizando length'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-      { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Los objetos Set son colecciones de valores. Se puede iterar sus elementos en el orden de su inserción. Un valor en un Set sólo puede estar una vez; éste es único en la colección Set', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
+      { pregunta: '¿Para añadir, comprobar o eliminar elementos de un conjunto se utiliza add(), has(), delete()?', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] }
     ]
 
     // copia array preguntas

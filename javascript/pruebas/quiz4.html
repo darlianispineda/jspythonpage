@@ -347,7 +347,8 @@
       }
 
       .preguntas img {
-        width: 400px !important;
+        width: auto !important;
+        max-height: 150px !important;
         display: block;
         margin: 0 auto;
       }
@@ -481,25 +482,22 @@
     // Objeto contenedor preguntas, opciones, selecciones etc
 
     let objetoPreguentas = [
-      { pregunta: "Javascript es considerado un lenjuague de programación...", opciones: ["Interpretado", "Basado en prototipos", "Imperativo", "Lenguaje de bajo nivel"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript fue desarrollado por?", opciones: ["Brendan Eich", "Dennis Ritchie", "James Gosling", "Ryan Lienhart Dahl"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'En la siguiente imagen ¿Que retorna la funcion?', opciones: ["undefined", "3", "null", "0"], multiple: false, seleccion: [], img: "img/funcionReturnUnd.png", opcionesAleatorias: [] },
 
-      { pregunta: "¿Dentro de qué elemento HTML ponemos JavaScript?", opciones: ["<script>", "<javascritp>", "<html>", "<body>"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Que retorna la siguiente funcion?', opciones: ["10", "2", "5", "error"], multiple: false, seleccion: [], img: "img/funcionesCierre.png", opcionesAleatorias: [] },
 
-      {
-        pregunta: "¿Cómo se puede agregar un comentario en un JavaScript?", opciones: ["//Este es un comentario", "<!--Este es un comentario--->", "Este es un comentario", "#Este es un comentario"], multiple: false, seleccion: [], img: "", opcionesAleatorias: []
-      },
-      { pregunta: "¿Cuando se declaran variables de JavaScript, que valor inicial tienen?", opciones: ["undefined", "null", "NaN", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Si deseo obtener el indice en un String, que metodo debo utilizar?', opciones: ["indexOf()", "includes()", "find()", "findIndex()"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript distingue entre mayúsculas y minúsculas?", opciones: ["true", "false", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'En la siguiente imagen ¿Que retorna la funcion?', opciones: ["I love", "01001001 00100000 01101100 01101111 01110110 01100101", "error", "䘩蚠촬촷쥅"], multiple: false, seleccion: [], img: "img/parseInt.png", opcionesAleatorias: [] },
 
-      { pregunta: "Si se realiza una operación matemática en una con una variable no inicializada, ¿Cual sera su resultado? ", opciones: ["NaN", "null", "undefined", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione el titulo acorde a la siguiente definicion: "Método analiza un argumento de cadena y devuelve un número entero de la base o raíz especificada" ', opciones: ["parseInt()", "Math.sqrt()", "Math.pow()", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Declara una variable de alcance local con ámbito de bloque, la cual, opcionalmente, puede ser inicializada con algún valor", opciones: ["let", "var", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cuales son los metodos utilizados para extraer partes de un string?', opciones: ["slice()", "substring()", "substr()", "splice()"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-      { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cuales son los 3 metodos para extraer caracteres de cadena?" ', opciones: ["charAt()", "charCodeAt()", "Acceso a la propiedad []", "indexOf()"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'La siguiente funcion, cual es su equivalente a funcion de flecha" ', opciones: ['const myFunc = () => "value"', 'const myFunc = (value) => "value"', "", ""], multiple: false, seleccion: [], img: "img/funcionflecha.png", opcionesAleatorias: [] },
 
     ]
 
@@ -508,6 +506,7 @@
     // barajea y toma 5 elementos para mostrarlos en preguntasarray 
     const objectQuez = ranInd(copyOb).slice(0, 5);
     //const objectQuez = ranInd(copyOb)
+
     // barajear opciones y almacenarlas
     for (let i = 0; i < objectQuez.length; i++) {
       let opc = [...objectQuez[i].opciones];

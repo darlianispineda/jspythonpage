@@ -347,7 +347,8 @@
       }
 
       .preguntas img {
-        width: 400px !important;
+        width: auto !important;
+        max-height: 190px !important;
         display: block;
         margin: 0 auto;
       }
@@ -481,25 +482,19 @@
     // Objeto contenedor preguntas, opciones, selecciones etc
 
     let objetoPreguentas = [
-      { pregunta: "Javascript es considerado un lenjuague de programación...", opciones: ["Interpretado", "Basado en prototipos", "Imperativo", "Lenguaje de bajo nivel"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo se declara una variable en ECMAScript 2015 ?", opciones: ["var nombre", " variable nombre", "const nombre", "var 123"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript fue desarrollado por?", opciones: ["Brendan Eich", "Dennis Ritchie", "James Gosling", "Ryan Lienhart Dahl"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Qué operador se usa para asignar un valor a una variable?", opciones: ["=", "===", "==", "+"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿Dentro de qué elemento HTML ponemos JavaScript?", opciones: ["<script>", "<javascritp>", "<html>", "<body>"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cuales son las reglas generales para construir nombres para variables?", opciones: ["Los nombres pueden contener letras, dígitos, guiones bajos y signos de dólar", "Los nombres deben comenzar con una letra, también pueden empezar con $ ", "Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres", "Los nombres no distinguen entre mayúsculas y minúsculas"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      {
-        pregunta: "¿Cómo se puede agregar un comentario en un JavaScript?", opciones: ["//Este es un comentario", "<!--Este es un comentario--->", "Este es un comentario", "#Este es un comentario"], multiple: false, seleccion: [], img: "", opcionesAleatorias: []
-      },
-      { pregunta: "¿Cuando se declaran variables de JavaScript, que valor inicial tienen?", opciones: ["undefined", "null", "NaN", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Que valor retorna una variable declarada sin valor?", opciones: ["undefined", "NaN", "Null", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cuales son las 3 formas de declarar una variable?", opciones: ["var", "let", "const", "variable"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "En la siguiente imagen ¿Que retorna la funcion? ", opciones: ["Menor a dos", "Menor a uno", " Mayor o igual a dos", ""], multiple: false, seleccion: [], img: "img/ordenLogico.png", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript distingue entre mayúsculas y minúsculas?", opciones: ["true", "false", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Si se realiza una operación matemática en una con una variable no inicializada, ¿Cual sera su resultado? ", opciones: ["NaN", "null", "undefined", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Declara una variable de alcance local con ámbito de bloque, la cual, opcionalmente, puede ser inicializada con algún valor", opciones: ["let", "var", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-      { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿El operador &&  representa lógica (y) su resultado es verdadero solo cuando?", opciones: ["Los dos valores que se le dan son verdaderos", "Uno de los dos valores es verdadero", "Uno de los dos valores es falso", "los dos valores son falsos"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "Selecciones algunas caracteristicas de los operadores lógicos && y || ", opciones: ["Convierten el valor de su lado izquierdo al tipo booleano para decidir qué hacer", "Dependiendo del operador y el resultado de esa conversión, devolverán el valor original de la izquierda o el valor de la derecha", "OR || devolverá el valor a su izquierda cuando se pueda convertir a verdadero de lo contrario, devolverá el valor a su derecha, && funciona de manera similar pero al revés", "El operador && cuando el valor de la izquierda es algo que se convierte en falso, devuelve el derecho y, de lo contrario, devuelve el valor de la izquierdo"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "Es una caracteristica importante de los operadores && y ||, conocida como evaluacion de cortocircuito", opciones: ["Los operadores && y ||, su derecha se evalúa solo cuando es necesario, en el caso de (true || X), no importa lo que X sea , el resultado será verdadero y X nunca se evaluará", "Los operadores && y ||, su derecha se evalúa siempre, si es verdadero retornara esta, de lo contrado la izquierda", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
     ]
 
@@ -508,6 +503,8 @@
     // barajea y toma 5 elementos para mostrarlos en preguntasarray 
     const objectQuez = ranInd(copyOb).slice(0, 5);
     //const objectQuez = ranInd(copyOb)
+
+
     // barajear opciones y almacenarlas
     for (let i = 0; i < objectQuez.length; i++) {
       let opc = [...objectQuez[i].opciones];

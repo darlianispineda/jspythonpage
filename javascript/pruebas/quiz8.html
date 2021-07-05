@@ -347,7 +347,8 @@
       }
 
       .preguntas img {
-        width: 400px !important;
+        width: auto !important;
+        max-height: 190px !important;
         display: block;
         margin: 0 auto;
       }
@@ -500,14 +501,116 @@
 
       { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
       { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo se declara una variable en ECMAScript 2015 ?", opciones: ["var nombre", " variable nombre", "const nombre", "var 123"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
+      { pregunta: "¿Qué operador se usa para asignar un valor a una variable?", opciones: ["=", "===", "==", "+"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: "¿Cuales son las reglas generales para construir nombres para variables?", opciones: ["Los nombres pueden contener letras, dígitos, guiones bajos y signos de dólar", "Los nombres deben comenzar con una letra, también pueden empezar con $ ", "Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres", "Los nombres no distinguen entre mayúsculas y minúsculas"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: "¿Que valor retorna una variable declarada sin valor?", opciones: ["undefined", "NaN", "Null", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cuales son las 3 formas de declarar una variable?", opciones: ["var", "let", "const", "variable"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "En la siguiente imagen ¿Que retorna la funcion? ", opciones: ["Menor a dos", "Menor a uno", " Mayor o igual a dos", ""], multiple: false, seleccion: [], img: "img/ordenLogico.png", opcionesAleatorias: [] },
+
+      { pregunta: "¿El operador &&  representa lógica (y) su resultado es verdadero solo cuando?", opciones: ["Los dos valores que se le dan son verdaderos", "Uno de los dos valores es verdadero", "Uno de los dos valores es falso", "los dos valores son falsos"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "Selecciones algunas caracteristicas de los operadores lógicos && y || ", opciones: ["Convierten el valor de su lado izquierdo al tipo booleano para decidir qué hacer", "Dependiendo del operador y el resultado de esa conversión, devolverán el valor original de la izquierda o el valor de la derecha", "OR || devolverá el valor a su izquierda cuando se pueda convertir a verdadero de lo contrario, devolverá el valor a su derecha, && funciona de manera similar pero al revés", "El operador && cuando el valor de la izquierda es algo que se convierte en falso, devuelve el derecho y, de lo contrario, devuelve el valor de la izquierdo"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "Es una caracteristica importante de los operadores && y ||, conocida como evaluacion de cortocircuito", opciones: ["Los operadores && y ||, su derecha se evalúa solo cuando es necesario, en el caso de (true || X), no importa lo que X sea , el resultado será verdadero y X nunca se evaluará", "Los operadores && y ||, su derecha se evalúa siempre, si es verdadero retornara esta, de lo contrado la izquierda", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Cómo escribir una instrucción IF para ejecutar algún código si "i" NO es igual a 5?', opciones: ["if(i!==5)", "if i<>5", "if(i<>5)", "if(i=!5)"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo escribir una declaración IF en JavaScript?", opciones: ["if(i==5)", "if i=5 then ", "if i=5", " if i==5 then"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo comienza un bucle WHILE?", opciones: ["while(i<=10)", "while i=10", "while i=1 to 10", "while(i<=10;i++)"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo comienza un bucle FOR?", opciones: ["for (let i= 0; i< 5; i++)", "for (let i= 0; i< 5)", "for (i< 5;i++)", "for i=1 to 5"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cual es el uso de los condicionales if, else, else if?", opciones: ["if para especificar un bloque de código que se ejecutará, si una condición especificada es verdadera", "else para especificar un bloque de código que se ejecutará, si la misma condición es falsa", "else if para especificar una nueva condición para probar, si la primera condición es falsa", "else if para especificar una nueva condición para probar, si la primera condición es verdadera"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿En la siguiente imagen cual es el resultado que arrojara?", opciones: ["21", "undefined", "bucle infinito", "no arroja ningun resultado, el ciclo esta mal declarado"], multiple: false, seleccion: [], img: "img/ciclofor.png", opcionesAleatorias: [] },
+
+      { pregunta: 'En la siguiente imagen ¿Que retorna la funcion?', opciones: ["undefined", "3", "null", "0"], multiple: false, seleccion: [], img: "img/funcionReturnUnd.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿Que retorna la siguiente funcion?', opciones: ["10", "2", "5", "error"], multiple: false, seleccion: [], img: "img/funcionesCierre.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿Si deseo obtener el indice en un String, que metodo debo utilizar?', opciones: ["indexOf()", "includes()", "find()", "findIndex()"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'En la siguiente imagen ¿Que retorna la funcion?', opciones: ["I love", "01001001 00100000 01101100 01101111 01110110 01100101", "error", "䘩蚠촬촷쥅"], multiple: false, seleccion: [], img: "img/parseInt.png", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione el titulo acorde a la siguiente definicion: "Método analiza un argumento de cadena y devuelve un número entero de la base o raíz especificada" ', opciones: ["parseInt()", "Math.sqrt()", "Math.pow()", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Cuales son los metodos utilizados para extraer partes de un string?', opciones: ["slice()", "substring()", "substr()", "splice()"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Cuales son los 3 metodos para extraer caracteres de cadena?" ', opciones: ["charAt()", "charCodeAt()", "Acceso a la propiedad []", "indexOf()"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'La siguiente funcion, cual es su equivalente a funcion de flecha" ', opciones: ['const myFunc = () => "value"', 'const myFunc = (value) => "value"', "", ""], multiple: false, seleccion: [], img: "img/funcionflecha.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿Cual de los siguientes son metodos de array?', opciones: ["slice()", "splice()", "indexOf()", "substring()"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?", opciones: ["let colors=['red','blue','red']", "let colors={1:'red',2:'blue',3:'red'})", "let colors=('red','blue','red')", "let colors=['red','blue','red']", 'let colors= new Set(["red", "blue", "red"])'], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cuales son los metodos para agregar o eliminar 1 elemento al inicio y el final de un array?', opciones: ["pop(),push(), shift(), unshift() ", "concat(), splice(), pop(), ", "shift(), unshift()", "pop(),push()"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione la opcion adecuada para acceder al elemento 11 del array mostrado en la imagen', opciones: ["arr[3][0][1]", "arr[3][0] ", "arr[3]", ""], multiple: false, seleccion: [], img: "img/accedermatriz.png", opcionesAleatorias: [] },
+      { pregunta: 'Para actualizar la propiedad name en el siguiente objeto a "Happy Camper" ¿Que opcion se debe seleccionar?', opciones: ['ourDog.name = "Happy Camper"', 'ourDog[name] = "Happy Camper"', 'ourDog.[name] = "Happy Camper"', ''], multiple: false, seleccion: [], img: "img/updateobjeto.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿Que opcion se debe seleccionar para eliminar la propiedad "bark" del siguiente objeto?', opciones: [' delete ourDog.bark', 'ourDog.bark = 0', 'ourDog.bark = ""', ''], multiple: false, seleccion: [], img: "img/deleteprop.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿La siguiente imagen muestra un objeto?', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "img/matrizuobjeto.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿Para obtener el valor de la propiedad forder2 en el siguiente objeto anidado se selecciona la siguiente opcion "ourStorage.cabinet["topdrawer"].folder2"?', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "img/objetosanidados.png", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione algunas caracteristicas de hasOwnProperty', opciones: ['Devuelve un booleano indicando si el objeto tiene la propiedad especificada', 'no verifica la cadena prototipo del objeto', 'JavaScript no protege el nombre de la propiedad', 'No existe la posibilidad de que un objeto pudiera tener un propiedad con ese nombre'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione algunas caracteristicas de map()', opciones: ['Crea una nueva matriz con el resultado de llamar a una función para cada elemento de la matriz', 'Llama a la función proporcionada una vez para cada elemento de una matriz, en orden.', 'No ejecuta la función para elementos vacíos', 'Cambia la matriz original'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Cuales son algunas de las diferencias entre Objects y Maps ?', opciones: ['Las claves de un Object son Strings y Symbols, mientras que para un Map pueden ser de cualquier tipo, incluyendo funciones, objetos y cualquier otro tipo primitivo', 'Puedes saber facilmente el tamaño de un Map usando la propiedad size, mientras que le número de propiedades en un Object tiene que ser deternminado manualmente', 'Un Map es un iterable lo que permite iterar directamente sobre el, mientras que si queremos iterar sobre un Object necesitamos obtener primero las claves de alguna forma para después iterar sobre el.', 'Puedes saber facilmente el tamaño de un Map usando la propiedad size, mientras que le número de propiedades en un Object utilizando length'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Los objetos Set son colecciones de valores. Se puede iterar sus elementos en el orden de su inserción. Un valor en un Set sólo puede estar una vez; éste es único en la colección Set', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Para añadir, comprobar o eliminar elementos de un conjunto se utiliza add(), has(), delete()?', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Cuando abre una página web en su navegador, el navegador recupera el texto HTML de la página y lo analiza, el navegador crea un modelo de la estructura del documento y usa este modelo para dibujar la página en la pantalla', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'En el DOM cada nodo tiene una parentNode que apunta a un objeto similar a una matriz que contiene a sus hijos.', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Cuales de los siguientes no son eventos del mouse?', opciones: ['onblur,onchange, onfocus, onsubmit', 'onclick, onload , onresize', 'onkeyup, onkeydown, onreset', 'onmouseover, onmousedown,onmousemove'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: '¿Analice el codigo de la imagen y seleccione la opcion que ocurre al posicionarse sobre el enlace de nombre "Azul" ?', opciones: ['El div de color negro se cambia a azul y permanece asi, hasta posicionarse sobre cualquiera de los otros enlaces', 'El div de color negro se cambia a azul y al retirar el mouse vuelve a ser negro', 'El div permanece de color negro, se debe hacer click para que cambie el color', ''], multiple: false, seleccion: [], img: "img/mouseout.png", opcionesAleatorias: [] },
+
+      { pregunta: '¿De acuerdo a la siguiente imagen, al mostrar en el navegador que ocurria?', opciones: ['La consola del navegador registraria un error, indicando que enviarDatos no esta definida', 'La consola del navegador registraria un error, indicando que no se puede remover el controlador de eventos ya que no fue agregado', 'Carga la pagina normal, no arrojaria ningun error, ya que el controlador de eventos no fue agregado', ''], multiple: false, seleccion: [], img: "img/errorEvent.png", opcionesAleatorias: [] },
+      { pregunta: 'Método especial para crear e inicializar un objeto creado con una clase', opciones: ['constructor ', 'this', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'JavaScript, utiliza funciones especiales llamadas funciones constructoras para definir objetos y sus características', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione algunas caracteristicas de las funciones contructor', opciones: ['Se definen con un nombre en mayúscula para distinguirlos de otras funciones que no lo son constructors', 'Usan la palabra clave this para establecer las propiedades del objeto que crearán. Dentro del constructor, se thisrefiere al nuevo objeto que creará', 'Definen propiedades y comportamientos en lugar de devolver un valor como lo harían otras funciones', 'Puede utilizar la palabra clave super para llamar al constructor de una clase padre'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'La función constructora es la versión de JavaScript de una clase', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'El codigo de la siguiente corresponde a ...', opciones: ['Un constructor funcional', 'Una funcion', 'Una funcion creada con errores', ''], multiple: false, seleccion: [], img: "img/objetofuncion.png", opcionesAleatorias: [] },
+
+      { pregunta: 'Mecanismo mediante el cual los objetos en JavaScript heredan características entre sí', opciones: ['Prototipos', 'Constructor', 'this', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'En la siguiente imagen la propiedad prototype agrega una nueva propiedad al constructor', opciones: [' true', 'false', '', ''], multiple: false, seleccion: [], img: "img/addprototipo.png", opcionesAleatorias: [] },
+
+      { pregunta: 'En la siguiente imagen, Bird es un constructor que hereda su prototype de Animal', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "img/herenciaPrototipos.png", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione algunas caracteriasticas de las clases en Javascript', opciones: ['Son una mejora sintáctica sobre la herencia basada en prototipos', 'La sintaxis de las clases no introduce un nuevo modelo de herencia orientada a objetos en JavaScript', 'Proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con la herencia', 'La sintaxis de una clase tiene dos componentes las expresiones de funciones y declaraciones de funciones'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'La palabra clave extends es usada en declaraciones de clase o expresiones de clase para crear una clase hija.', opciones: ['true', 'falso', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione las caracteristicas de Metodo setInterval() ', opciones: [' Llama a una función o evalúa una expresión a intervalos específicos (en milisegundos)', 'Continuará llamando a la función hasta que se llame a clearInterval () o se cierre la ventana', 'El valor de ID devuelto por setInterval () se utiliza como parámetro para el método clearInterval ()', 'Utilizado para ejecutar una función solo una vez, después de un número específico de milisegundos'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Sintaxis de setInterval(milliseconds,function, param1, param2, ...)', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      {
+        pregunta: 'El en siguiente codigo, al ser llamada la funcion ejecutara una vez un alert con el texto"Hello!"', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "img/setInterval.png",
+        opcionesAleatorias: []
+      },
+
+      { pregunta: 'El método setTimeout () llama a una función o evalúa una expresión después de un número específico de milisegundos.', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione algunas caracteristicas para el manejo de excepciones', opciones: ['La declaración try le permite probar un bloque de código en busca de errores.', 'La declaración catch le permite manejar el error.', 'La declaración throw le permite crear errores personalizados.', 'La declaración finally le permite ejecutar código, antes de capturar, independientemente del resultado.'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'setTimeout() es un ejemplo de funcion asincronica ya que se ejecuta en paralelo con otras funciones', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione algunas caracteristicas del Javascript Asincronico', opciones: ['La palabra clave async antes de una función hace que la función devuelva una promesa', 'La palabra clave await antes de una función hace que la función espere una promesa', 'La await palabra clave solo se puede utilizar dentro de una async función.', 'La palabra clave await antes de una función hace que la función devuelva una promesa'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
     ]
 
     // copia array preguntas
     const copyOb = [...objetoPreguentas]
     // barajea y toma 5 elementos para mostrarlos en preguntasarray 
-    const objectQuez = ranInd(copyOb).slice(0, 5);
+    const objectQuez = ranInd(copyOb).slice(0, 25);
     //const objectQuez = ranInd(copyOb)
+
     // barajear opciones y almacenarlas
     for (let i = 0; i < objectQuez.length; i++) {
       let opc = [...objectQuez[i].opciones];
@@ -951,8 +1054,6 @@
       resCont.appendChild(resultado);
 
     });
-
-
     // llamo a la funcion guardar seleccion
     save.addEventListener("click", guardar);
     // carga inicial preguntas

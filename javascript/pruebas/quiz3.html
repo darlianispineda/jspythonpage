@@ -351,7 +351,6 @@
         display: block;
         margin: 0 auto;
       }
-
     }
   </style>
 </head>
@@ -481,33 +480,21 @@
     // Objeto contenedor preguntas, opciones, selecciones etc
 
     let objetoPreguentas = [
-      { pregunta: "Javascript es considerado un lenjuague de programación...", opciones: ["Interpretado", "Basado en prototipos", "Imperativo", "Lenguaje de bajo nivel"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript fue desarrollado por?", opciones: ["Brendan Eich", "Dennis Ritchie", "James Gosling", "Ryan Lienhart Dahl"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "¿Dentro de qué elemento HTML ponemos JavaScript?", opciones: ["<script>", "<javascritp>", "<html>", "<body>"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      {
-        pregunta: "¿Cómo se puede agregar un comentario en un JavaScript?", opciones: ["//Este es un comentario", "<!--Este es un comentario--->", "Este es un comentario", "#Este es un comentario"], multiple: false, seleccion: [], img: "", opcionesAleatorias: []
-      },
-      { pregunta: "¿Cuando se declaran variables de JavaScript, que valor inicial tienen?", opciones: ["undefined", "null", "NaN", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "¿JavaScript distingue entre mayúsculas y minúsculas?", opciones: ["true", "false", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Si se realiza una operación matemática en una con una variable no inicializada, ¿Cual sera su resultado? ", opciones: ["NaN", "null", "undefined", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Declara una variable de alcance local con ámbito de bloque, la cual, opcionalmente, puede ser inicializada con algún valor", opciones: ["let", "var", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-      { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
+      { pregunta: '¿Cómo escribir una instrucción IF para ejecutar algún código si "i" NO es igual a 5?', opciones: ["if(i!==5)", "if i<>5", "if(i<>5)", "if(i=!5)"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo escribir una declaración IF en JavaScript?", opciones: ["if(i==5)", "if i=5 then ", "if i=5", " if i==5 then"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo comienza un bucle WHILE?", opciones: ["while(i<=10)", "while i=10", "while i=1 to 10", "while(i<=10;i++)"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cómo comienza un bucle FOR?", opciones: ["for (let i= 0; i< 5; i++)", "for (let i= 0; i< 5)", "for (i< 5;i++)", "for i=1 to 5"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿Cual es el uso de los condicionales if, else, else if?", opciones: ["if para especificar un bloque de código que se ejecutará, si una condición especificada es verdadera", "else para especificar un bloque de código que se ejecutará, si la misma condición es falsa", "else if para especificar una nueva condición para probar, si la primera condición es falsa", "else if para especificar una nueva condición para probar, si la primera condición es verdadera"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: "¿En la siguiente imagen cual es el resultado que arrojara?", opciones: ["21", "undefined", "bucle infinito", "no arroja ningun resultado, el ciclo esta mal declarado"], multiple: false, seleccion: [], img: "img/ciclofor.png", opcionesAleatorias: [] }
     ]
 
     // copia array preguntas
     const copyOb = [...objetoPreguentas]
     // barajea y toma 5 elementos para mostrarlos en preguntasarray 
     const objectQuez = ranInd(copyOb).slice(0, 5);
-    //const objectQuez = ranInd(copyOb)
+    //const objectQuez = ranInd(copyOb);
+
     // barajear opciones y almacenarlas
     for (let i = 0; i < objectQuez.length; i++) {
       let opc = [...objectQuez[i].opciones];
@@ -647,8 +634,8 @@
 
       // crear icono
       icoInd = document.createElement('i');
-      div_ind.insertBefore(icoInd, elem_ind);
       icoInd.setAttribute("data-id", index);
+      div_ind.insertBefore(icoInd, elem_ind);
       icoInd.style.color = "#3498DB";
     }
     const div_li = document.querySelectorAll(".cont_li");

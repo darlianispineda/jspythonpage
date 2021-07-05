@@ -224,7 +224,6 @@
       height: 80%;
       list-style: none;
       overflow-y: auto;
-      overflow-x: hidden;
     }
 
     aside button {
@@ -481,26 +480,26 @@
     // Objeto contenedor preguntas, opciones, selecciones etc
 
     let objetoPreguentas = [
-      { pregunta: "Javascript es considerado un lenjuague de programación...", opciones: ["Interpretado", "Basado en prototipos", "Imperativo", "Lenguaje de bajo nivel"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript fue desarrollado por?", opciones: ["Brendan Eich", "Dennis Ritchie", "James Gosling", "Ryan Lienhart Dahl"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Método especial para crear e inicializar un objeto creado con una clase', opciones: ['constructor ', 'this', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿Dentro de qué elemento HTML ponemos JavaScript?", opciones: ["<script>", "<javascritp>", "<html>", "<body>"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'JavaScript, utiliza funciones especiales llamadas funciones constructoras para definir objetos y sus características', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      {
-        pregunta: "¿Cómo se puede agregar un comentario en un JavaScript?", opciones: ["//Este es un comentario", "<!--Este es un comentario--->", "Este es un comentario", "#Este es un comentario"], multiple: false, seleccion: [], img: "", opcionesAleatorias: []
-      },
-      { pregunta: "¿Cuando se declaran variables de JavaScript, que valor inicial tienen?", opciones: ["undefined", "null", "NaN", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Seleccione algunas caracteristicas de las funciones contructor', opciones: ['Se definen con un nombre en mayúscula para distinguirlos de otras funciones que no lo son constructors', 'Usan la palabra clave this para establecer las propiedades del objeto que crearán. Dentro del constructor, se thisrefiere al nuevo objeto que creará', 'Definen propiedades y comportamientos en lugar de devolver un valor como lo harían otras funciones', 'Puede utilizar la palabra clave super para llamar al constructor de una clase padre'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript distingue entre mayúsculas y minúsculas?", opciones: ["true", "false", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'La función constructora es la versión de JavaScript de una clase', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Si se realiza una operación matemática en una con una variable no inicializada, ¿Cual sera su resultado? ", opciones: ["NaN", "null", "undefined", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'El codigo de la siguiente corresponde a ...', opciones: ['Un constructor funcional', 'Una funcion', 'Una funcion creada con errores', ''], multiple: false, seleccion: [], img: "img/objetofuncion.png", opcionesAleatorias: [] },
 
-      { pregunta: "Declara una variable de alcance local con ámbito de bloque, la cual, opcionalmente, puede ser inicializada con algún valor", opciones: ["let", "var", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Mecanismo mediante el cual los objetos en JavaScript heredan características entre sí', opciones: ['Prototipos', 'Constructor', 'this', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-      { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'En la siguiente imagen la propiedad prototype agrega una nueva propiedad al constructor', opciones: [' true', 'false', '', ''], multiple: false, seleccion: [], img: "img/addprototipo.png", opcionesAleatorias: [] },
 
+      { pregunta: 'En la siguiente imagen, Bird es un constructor que hereda su prototype de Animal', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "img/herenciaPrototipos.png", opcionesAleatorias: [] },
+
+      { pregunta: 'Seleccione algunas caracteriasticas de las clases en Javascript', opciones: ['Son una mejora sintáctica sobre la herencia basada en prototipos', 'La sintaxis de las clases no introduce un nuevo modelo de herencia orientada a objetos en JavaScript', 'Proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con la herencia', 'La sintaxis de una clase tiene dos componentes las expresiones de funciones y declaraciones de funciones'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
+
+      { pregunta: 'La palabra clave extends es usada en declaraciones de clase o expresiones de clase para crear una clase hija.', opciones: ['true', 'falso', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
     ]
 
     // copia array preguntas
@@ -508,6 +507,7 @@
     // barajea y toma 5 elementos para mostrarlos en preguntasarray 
     const objectQuez = ranInd(copyOb).slice(0, 5);
     //const objectQuez = ranInd(copyOb)
+
     // barajear opciones y almacenarlas
     for (let i = 0; i < objectQuez.length; i++) {
       let opc = [...objectQuez[i].opciones];

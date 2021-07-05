@@ -224,7 +224,6 @@
       height: 80%;
       list-style: none;
       overflow-y: auto;
-      overflow-x: hidden;
     }
 
     aside button {
@@ -351,6 +350,7 @@
         display: block;
         margin: 0 auto;
       }
+
 
     }
   </style>
@@ -481,33 +481,23 @@
     // Objeto contenedor preguntas, opciones, selecciones etc
 
     let objetoPreguentas = [
-      { pregunta: "Javascript es considerado un lenjuague de programación...", opciones: ["Interpretado", "Basado en prototipos", "Imperativo", "Lenguaje de bajo nivel"], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript fue desarrollado por?", opciones: ["Brendan Eich", "Dennis Ritchie", "James Gosling", "Ryan Lienhart Dahl"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'Cuando abre una página web en su navegador, el navegador recupera el texto HTML de la página y lo analiza, el navegador crea un modelo de la estructura del documento y usa este modelo para dibujar la página en la pantalla', opciones: ['true', 'false', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿Dentro de qué elemento HTML ponemos JavaScript?", opciones: ["<script>", "<javascritp>", "<html>", "<body>"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: 'En el DOM cada nodo tiene una parentNode que apunta a un objeto similar a una matriz que contiene a sus hijos.', opciones: ['false', 'true', '', ''], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      {
-        pregunta: "¿Cómo se puede agregar un comentario en un JavaScript?", opciones: ["//Este es un comentario", "<!--Este es un comentario--->", "Este es un comentario", "#Este es un comentario"], multiple: false, seleccion: [], img: "", opcionesAleatorias: []
-      },
-      { pregunta: "¿Cuando se declaran variables de JavaScript, que valor inicial tienen?", opciones: ["undefined", "null", "NaN", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Cuales de los siguientes no son eventos del mouse?', opciones: ['onblur,onchange, onfocus, onsubmit', 'onclick, onload , onresize', 'onkeyup, onkeydown, onreset', 'onmouseover, onmousedown,onmousemove'], multiple: true, seleccion: [], img: "", opcionesAleatorias: [] },
 
-      { pregunta: "¿JavaScript distingue entre mayúsculas y minúsculas?", opciones: ["true", "false", "", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
+      { pregunta: '¿Analice el codigo de la imagen y seleccione la opcion que ocurre al posicionarse sobre el enlace de nombre "Azul" ?', opciones: ['El div de color negro se cambia a azul y permanece asi, hasta posicionarse sobre cualquiera de los otros enlaces', 'El div de color negro se cambia a azul y al retirar el mouse vuelve a ser negro', 'El div permanece de color negro, se debe hacer click para que cambie el color', ''], multiple: false, seleccion: [], img: "img/mouseout.png", opcionesAleatorias: [] },
 
-      { pregunta: "Si se realiza una operación matemática en una con una variable no inicializada, ¿Cual sera su resultado? ", opciones: ["NaN", "null", "undefined", ""], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Declara una variable de alcance local con ámbito de bloque, la cual, opcionalmente, puede ser inicializada con algún valor", opciones: ["let", "var", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
-      { pregunta: "Utilizado para declarar una variable global o local sin importar el ámbito del bloque", opciones: ["var", "let", "const", "var y let"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-      { pregunta: "¿Cual es el unico valor que no es igual a si mismo en JavaScript? ", opciones: ["NaN", "null", " undefined", "0"], multiple: false, seleccion: [], img: "", opcionesAleatorias: [] },
-
+      { pregunta: '¿De acuerdo a la siguiente imagen, al mostrar en el navegador que ocurria?', opciones: ['La consola del navegador registraria un error, indicando que enviarDatos no esta definida', 'La consola del navegador registraria un error, indicando que no se puede remover el controlador de eventos ya que no fue agregado', 'Carga la pagina normal, no arrojaria ningun error, ya que el controlador de eventos no fue agregado', ''], multiple: false, seleccion: [], img: "img/errorEvent.png", opcionesAleatorias: [] },
     ]
 
     // copia array preguntas
     const copyOb = [...objetoPreguentas]
     // barajea y toma 5 elementos para mostrarlos en preguntasarray 
     const objectQuez = ranInd(copyOb).slice(0, 5);
-    //const objectQuez = ranInd(copyOb)
+
     // barajear opciones y almacenarlas
     for (let i = 0; i < objectQuez.length; i++) {
       let opc = [...objectQuez[i].opciones];
