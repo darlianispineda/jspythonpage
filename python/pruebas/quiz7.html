@@ -16,9 +16,9 @@
             <img id="icono" src="img/python.png" title="Aprender Python" >
         </a>
 
-        <h1>Quiz 6: Programación orientada a objeto</h1>
+        <h1>Quiz Final</h1>
         <!-- puntos actual / puntos total-->
-        <p >Puntuación: <span id="puntos">0</span>/27</p>
+        <p >Puntuación: <span id="puntos">0</span>/24</p>
     </nav>
     <section id="Pregunta">
         <div id="linea_temporal">
@@ -67,35 +67,33 @@
         <div id="mensaje_final">
             <h3 id="tiempo">¡Se acabó el tiempo!</h3>
             <h1 id="msg_f_titulo"></h1>
-            <p>Puntos necesarios para pasar: 15</p>
+            <p>Puntos necesarios para pasar: 12</p>
             <p>Respondiste bien <span id="cantidad_bien"></span> preguntas
             de un total de <span id="cantidad_total"></span></p>
             <p id="recomendacion"></p>
             <button id="btn_final_1" class="btn-msg-final">Ir al anterior tema</button>
-            <button id="btn_final_2" class="btn-msg-final">Ir al siguiente tema</button>
             <button id="btn_final_3" class="btn-msg-final">Retomar quiz</button>
         </div>
     </div>
 
     <script>
-        const arreglo_preguntas = [ "img/q61.jpg","s","d", 
-                            "img/q62.jpg", "v", true, 
-                            "img/q63.jpg", "t", "ha sido contratado como obrero",
-                            "img/q64.jpg","v",true, 
-                            "img/q65.jpg", "t", "500 15", 
-                            "img/q66.jpg", "v", false,
-                            "img/q67.jpg","v",false, 
-                            "img/q68.jpg", "v", true, 
-                            "img/q69.jpg", "v", true]
+        const arreglo_preguntas = [ "img/q71.jpg","s","c", 
+                            "img/q72.jpg", "t", "12345", 
+                            "img/q73.jpg", "s", "a",
+                            "img/q74.jpg","v",false, 
+                            "img/q75.jpg", "v", true, 
+                            "img/q76.jpg", "s", "d",
+                            "img/q77.jpg","v",false, 
+                            "img/q78.jpg", "t", "vaca"]
 
-        var arreglo_respuestas = [null,"","",null,"","",null,"","",null,"","",null,"","",null,"","",null,"","",null,"","",null]
-        var valor_preguntas = [3,"","",3,"","",3,"","",3,"","",3,"","",3,"","",3,"","",3,"","",3,]
-        const puntos_para_pasar = 15
-        const tiempo_quiz = 60*2 // cantidad de segundos que queremos que dure el quiz
+        var arreglo_respuestas = [null,"","",null,"","",null,"","",null,"","",null,"","",null,"","",null,"","",null]
+        var valor_preguntas = [3,"","",3,"","",3,"","",3,"","",3,"","",3,"","",3,"","",3,]
+        const puntos_para_pasar = 12
+        const tiempo_quiz = 60*3 // cantidad de segundos que queremos que dure el quiz
         // aquí redirigimos al tema siguiente y al anterior respectivamente...  aquí un ejemplo redirigiendo 
         // a paginas web
-        document.querySelector("#btn_final_1").onclick = ()=>{ location.href="../clases.html"}
-        document.querySelector("#btn_final_2").onclick = ()=>{ location.href="../escritura.html"}
+        document.querySelector("#btn_final_1").onclick = ()=>{ location.href="../escritura.html"}
+        
         document.querySelector("#btn_final_3").onclick = ()=>{ location.reload()}
     </script>
     <script src="../../js/app.js">

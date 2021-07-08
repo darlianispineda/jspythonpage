@@ -16,9 +16,9 @@
             <img id="icono" src="img/python.png" title="Aprender Python" >
         </a>
 
-        <h1>Quiz 1: Tipo de datos</h1>
+        <h1>Quiz 1: INTRODUCCIÓN</h1>
         <!-- puntos actual / puntos total-->
-        <p >Puntuación: <span id="puntos">0</span>/15</p>
+        <p >Puntuación: <span id="puntos">0</span>/12</p>
     </nav>
     <section id="Pregunta">
         <div id="linea_temporal">
@@ -29,6 +29,7 @@
         </div>
     </section>
     <section class="botones">
+        
         <div id="seleccion-simple" class="botones-opciones">
             <button id="opciona" class="opciones">opcion A</button>
             <button id="opcionb" class="opciones">opcion B</button>
@@ -67,7 +68,7 @@
         <div id="mensaje_final">
             <h3 id="tiempo">¡Se acabó el tiempo!</h3>
             <h1 id="msg_f_titulo"></h1>
-            <p>Puntos necesarios para pasar: 10</p>
+            <p>Puntos necesarios para pasar: 9</p>
             <p>Respondiste bien <span id="cantidad_bien"></span> preguntas
             de un total de <span id="cantidad_total"></span></p>
             <p id="recomendacion"></p>
@@ -78,18 +79,19 @@
     </div>
 
     <script>
-        const arreglo_preguntas = [ "img/tipo_dato1.png","s","b", 
-                            "img/tipo_dato2.png", "v", true, 
-                            "img/tipo_dato3.png", "t", "a1b2c3"]
+        const arreglo_preguntas = [ "img/q0.jpg", "s", "a",
+                                    "img/q1.jpg", "v", false,
+                                    "img/q2.jpg", "v", true,
+                                    "img/q3.jpg", "v", true,]
 
-        var arreglo_respuestas = [null,"","",null,"","",null]
-        var valor_preguntas = [3,"","",5,"","",7]
-        const puntos_para_pasar = 8
+        var arreglo_respuestas = [null,"","",null,"","",null,"","",null,]
+        var valor_preguntas = [3,"","",3,"","",3,"","",3,]
+        const puntos_para_pasar = 7
         const tiempo_quiz = 60*2 // cantidad de segundos que queremos que dure el quiz
         // aquí redirigimos al tema siguiente y al anterior respectivamente...  aquí un ejemplo redirigiendo 
         // a paginas web
-        document.querySelector("#btn_final_1").onclick = ()=>{ location.href="https://www.google.com"}
-        document.querySelector("#btn_final_2").onclick = ()=>{ location.href="https://www.python.org"}
+        document.querySelector("#btn_final_1").onclick = ()=>{ location.href="../python.html"}
+        document.querySelector("#btn_final_2").onclick = ()=>{ location.href="../variables.html"}
         document.querySelector("#btn_final_3").onclick = ()=>{ location.reload()}
     </script>
     <script src="../../js/app.js">
