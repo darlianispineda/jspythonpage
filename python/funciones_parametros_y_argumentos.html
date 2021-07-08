@@ -73,10 +73,10 @@
     <div class="container">
       <div class="principal" ><p >FUNCIONES</p></div>
       
-      <div class="caja" id="caja3">
+      <div class="caja activo" id="caja3">
       <ul class = "lista">
         <li><a class="secundario" href="funciones_definicion.html">Definición</a></li>
-        <li><a class="secundario" href="funciones_parametros_y_argumentos.html">Parámetros y Argumentos</a></li>
+        <li><a class="secundario actual" href="funciones_parametros_y_argumentos.html">Parámetros y Argumentos</a></li>
         <li><a class="secundario" href="funciones_retorno.html">Retorno</a></li>
            
               <li class="test1"><a href="pruebas/quiz4.html"> <i class="icon-pencil"></i>TEST</a></li>
@@ -102,10 +102,10 @@
   <div class="container">
     <div class="principal" ><p >PROGRAMACIÓN ORIENTADA A OBJETOS</p></div>
     
-    <div class="caja  activo" id="caja5">
+    <div class="caja" id="caja5">
     <ul class = "lista">
       <li><a class="secundario" href="clases.html">Creación de Clases</a></li>
-      <li><a class="secundario  actual" href="constructor.html">Constructor</a></li>
+      <li><a class="secundario" href="constructor.html">Constructor</a></li>
       <li><a class="secundario" href="metodos.html">Métodos</a></li> 
       <li><a class="secundario" href="herencia.html">Herencia</a></li>      
             <li class="test1"><a href="pruebas/quiz6.html"> <i class="icon-pencil"></i>TEST</a></li>
@@ -132,34 +132,31 @@
       </div>
       <div class ="derecho">
         
-         <h1 class="title">Método constructor</h1>
-        
-       
-         
+         <h1 class="title">Parámetros y Argumentos</h1>
   
-         <p class="texto">Toda clase debe tener un “método constructor “, que es donde se colocan los atributos de la clase. <br><br>
-          Los métodos, se crean como las funciones y deben estar dentro del bloque de código de
-          sus clases, y siempre deben tener como argumento la palabra reservada self. El método
-          constructor debe tener como nombre, init .<br><br>
-          Los atributos, se crean como las variables, sólo que al principio se le coloca la palabra self y
-          luego de un punto el nombre del atributo.
-          
+         <p class="texto">Una función puede recibir valores cuando se invoca a través de unas variables conocidas como <em>parámetros</em> que se definen entre paréntesis en la declaración de la función. En el cuerpo de la función se pueden usar estos parámetros como si fuesen variables.
+             <br><br>Los valores que se pasan a la función en una llamada o invocación concreta de ella se conocen como <em>argumentos</em> y se asocian a los parámetros de la declaración de la función.      
         
         </p>
 
-        <img src="../img/constructor1.jpg" alt="" class="imagen">
-
-        <p class="texto">Este es un ejemplo de una clase en python. La clase personaje tiene 2 atributos, vida y
-          poder, primero sus valores se pasan al constructor y luego a ellos. El primer argumento
-          del constructor será el valor del atributo vida y el segundo será el valor del atributo poder.
-          x es un objeto de la clase personaje, los objetos se crean como las variables y se igualan al
-          constructor de la clase que deseemos. Como el constructor admite 2 argumentos, se le
-          colocan dentro de los paréntesis los valores que queremos que posea sus atributos
-          anteriormente definidos en la clase. El 500 se trata del argumento “v” y 15 del argumento
-          “p”.</p>
-
+        <img src="../img/funciones-parametros-y-argumentos.jpg" alt="" class="imagen">
         
+        <br><br>
 
+        <h2>Paso de Argumentos a una Función</h2>
+  
+        <p class="texto">Los argumentos se pueden pasar de dos formas:
+
+        <ul class="texto" style="margin-top: 0%;">
+          <li><strong>Argumentos posicionales:</strong> Se asocian a los parámetros de la función en el mismo orden que aparecen en la definición de la función.</li><br>
+          <li><strong>Argumentos nominales:</strong> Se indica explícitamente el nombre del parámetro al que se asocia un argumento de la forma <strong style="color: #dd1144;">parametro = argumento</strong>.</li>
+        </ul>
+
+       </p>
+
+       <img src="../img/funciones-paso-de-argumentos.jpg" alt="" class="imagen">
+       
+       <br>
        
       </div>
   

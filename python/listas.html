@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="../estilos/font.css">
+    <link rel="stylesheet" href="../estilos/style-cont.css">
+    <link rel="shortcut icon" href="../img/python.jpg" type="image/x-icon">
+  </head>
+
+<body>
+  
+    <div class ="superior">
+      
+       <a href="../index.html" class="botones"> <i class="icon-home icon"></i> </a>
+       <a href="../javascript/principalJs.html" class="botones"> <i class="icon-javascript icon"></i> Javascript</a>
+    </div>  
+    
+    <main>
+      <div class="izquierdo">
+        
+        <h1><strong>TEMARIO</strong></h1>
+  
+        <div class="temas">
+          <div class="container">
+            <div class="principal" ><p >INTRODUCCIÓN</p></div>
+            
+           <div class="caja" id="caja0">
+            <ul class = "lista">
+              <li><a class="secundario" href="python.html"> ¿Qué es Python?</a></li>
+              <li><a class="secundario"  href="historia.html">Breve Historia</a></li>
+              <li><a class="secundario" href="glosario.html">Glosario Básico</a></li>
+              <li class="test1"><a href="pruebas/quiz1.html" > <i class="icon-pencil"></i> TEST</a></li>
+            </ul>
+            </div>
+                    
+        </div>
+  
+        <div class="container">
+          <div class="principal" ><p >PROGRAMACIÓN BÁSICA</p></div>
+          
+          <div class="caja" id="caja1">
+          <ul class = "lista">
+            <li><a class="secundario" href="variables.html">Variables</a></li>
+              <li><a class="secundario" href="constantes.html">Constantes</a>
+              <li><a class="secundario" href="tipos.html">Tipos de datos</a>
+              </li>
+                
+              <li class="test1"><a href="pruebas/quiz2.html"><i class="icon-pencil"></i>TEST</a></li>
+          </ul>
+          </div>
+                  
+      </div>
+  
+        
+      <div class="container">
+        <div class="principal" ><p >CONTROLES DE FLUJO</p></div>
+        
+        <div class="caja" id="caja2">
+        <ul class = "lista">
+          <li><a class="secundario" href="condicionales.html">Condicionales</a></li>
+              <li><a class="secundario" href="ciclos.html">Ciclos</a></li>       
+              <li><a class="secundario" href="ternario.html">Operador Ternario</a></li>
+                
+              <li class="test1"><a href="pruebas/quiz3.html"><i class="icon-pencil"></i>TEST</a></li>
+        </ul>
+        </div>
+                
+    </div>
+  
+    <div class="container">
+      <div class="principal" ><p >FUNCIONES</p></div>
+      
+      <div class="caja" id="caja3">
+      <ul class = "lista">
+        <li><a class="secundario" href="funciones_definicion.html">Definición</a></li>
+        <li><a class="secundario" href="funciones_parametros_y_argumentos.html">Parámetros y Argumentos</a></li>
+        <li><a class="secundario" href="funciones_retorno.html">Retorno</a></li>
+           
+              <li class="test1"><a href="pruebas/quiz4.html"> <i class="icon-pencil"></i>TEST</a></li>
+      </ul>
+      </div>
+              
+  </div>
+  <div class="container">
+    <div class="principal" ><p >ESTRUCTURAS DE DATOS</p></div>
+    
+    <div class="caja activo" id="caja4">
+    <ul class = "lista">
+      <li><a class="secundario actual" href="listas.html">Listas</a></li>
+      <li><a class="secundario" href="tuplas.html">Tuplas</a></li>
+      <li><a class="secundario" href="diccionarios.html">Diccionarios</a></li>
+          
+            <li class="test1"><a href="pruebas/quiz5.html"> <i class="icon-pencil"></i>TEST</a></li>
+    </ul>
+    </div>
+            
+  </div>
+
+  <div class="container">
+    <div class="principal" ><p >PROGRAMACIÓN ORIENTADA A OBJETOS</p></div>
+    
+    <div class="caja" id="caja5">
+    <ul class = "lista">
+      <li><a class="secundario" href="clases.html">Creación de Clases</a></li>
+      <li><a class="secundario" href="constructor.html">Constructor</a></li>
+      <li><a class="secundario" href="metodos.html">Métodos</a></li> 
+      <li><a class="secundario" href="herencia.html">Herencia</a></li>      
+            <li class="test1"><a href="pruebas/quiz6.html"> <i class="icon-pencil"></i>TEST</a></li>
+    </ul>
+    </div>
+            
+  </div>
+  <div class="container">
+    <div class="principal" ><p >OTRAS UTILIDADES</p></div>
+    
+    <div class="caja" id="caja6">
+    <ul class = "lista">
+      <li><a class="secundario" href="escritura.html">Escritura de archivos</a></li>
+      <li><a class="secundario" href="lectura.html">Lectura de archivos</a></li> 
+      <li><a class="secundario" href="excepciones.html">Manejo de Excepciones</a></li>   
+      <li><a class="secundario" href="modulos.html">Creación de módulos</a></li>    
+            <li class="test1"><a href="pruebas/quiz7.html"> <i class="icon-pencil"></i>TEST FINAL</a></li>
+    </ul>
+    </div>
+            
+  </div>
+        
+        </div>
+      </div>
+      <div class ="derecho">
+        
+         <h1 class="title">Listas</h1>
+  
+         <p class="texto">Una <strong>lista</strong> es una secuencias ordenadas de objetos de distintos tipos.<br><br>
+
+            Se construyen poniendo los elementos entre corchetes <strong style="color: #dd1144;">[ ]</strong> separados por comas.
+            
+            Se caracterizan por:
+
+            <ul class="texto" style="margin-top: 0%;">
+                <li>Tienen orden.</li>
+                <li>Pueden contener elementos de distintos tipos.</li>
+                <li>Son mutables, es decir, pueden alterarse durante la ejecución de un programa.</li>
+            </ul>            
+        
+        </p>
+
+        <img src="../img/listas-1.jpg" alt="" class="imagen"><br><br>
+
+
+        <h2>Creación de listas mediante la función <strong style="color: #dd1144;">list()</strong></h1>
+  
+        <p class="texto">Otra forma de crear listas es mediante la función <strong style="color: #dd1144;">list()</strong>.</p>
+
+        <ul class="texto" style="margin: 0%;">
+            <li><strong style="color: #dd1144;">list()</strong>: Crea una lista con los elementos de la secuencia o colección <strong style="color: #dd1144;">c</strong>.</li>
+        </ul>
+
+        <p class="texto">Se pueden indicar los elementos separados por comas, mediante una cadena, o mediante una colección de elementos iterable.</p>
+
+        <img src="../img/listas-2.jpg" alt="" class="imagen"><br><br>
+
+
+        <h2>Acceso a los elementos de una lista</h1>
+  
+        <p class="texto">Se utilizan los mismos operadores de acceso que para cadenas de caracteres.</p>
+
+        <ul class="texto" style="margin: 0%;">
+            <li><strong style="color: #dd1144;">l[i]</strong>: Devuelve el elemento de la lista l con el índice <strong style="color: #dd1144;"> i</strong>.</li>
+        </ul>
+
+        <p class="texto"><em>El índice del primer elemento de la lista es 0.</em></p>
+
+        <img src="../img/listas-3.jpg" alt="" class="imagen"><br><br>
+
+
+        <h2>Sublistas</h1><br><br>
+
+        <ul class="texto" style="margin: 0%;">
+            <li><strong style="color: #dd1144;">l[i:j:k]</strong>: Devuelve la sublista desde el elemento de <strong style="color: #dd1144;">l</strong> con el índice <strong style="color: #dd1144;">i</strong> hasta el elemento anterior al índice <strong style="color: #dd1144;">j</strong>, tomando elementos cada <strong style="color: #dd1144;">k</strong>.</li>
+        </ul><br><br>
+
+        <img src="../img/listas-4.jpg" alt="" class="imagen"><br><br>
+        
+        <br>
+
+        <h2>Operaciones que no modifican una lista</h1><br><br>
+
+        <ul class="texto" style="margin: 0%;">
+            <li><strong style="color: #dd1144;">len(l)</strong>: Devuelve el número de elementos de la lista <strong style="color: #dd1144;">l</strong>.</li>
+            <li><strong style="color: #dd1144;">min(l)</strong>: Devuelve el mínimo elemento de la lista <strong style="color: #dd1144;">l</strong> siempre que los datos sean comparables.</li>
+            <li><strong style="color: #dd1144;">max(l)</strong>: Devuelve el máximo elemento de la lista <strong style="color: #dd1144;">l</strong> siempre que los datos sean comparables.</li>
+            <li><strong style="color: #dd1144;">sum(l)</strong>: Devuelve la suma de los elementos de la lista <strong style="color: #dd1144;">l</strong>, siempre que los datos se puedan sumar.</li>
+            <li><strong style="color: #dd1144;">dato in l</strong>: Devuelve <strong style="color: #dd1144;">True</strong> si el dato <strong style="color: #dd1144;">dato</strong> pertenece a la lista <strong style="color: #dd1144;">l</strong> y <strong style="color: #dd1144;">False</strong> en caso contrario.</li>
+            <li><strong style="color: #dd1144;">l.index(dato)</strong>: Devuelve la posición que ocupa en la lista <strong style="color: #dd1144;">l</strong> el primer elemento con valor <strong style="color: #dd1144;">dato</strong>.</li>
+            <li><strong style="color: #dd1144;">l.count(dato)</strong>: Devuelve el número de veces que el valor <strong style="color: #dd1144;">dato</strong> está contenido en la lista <strong style="color: #dd1144;">l</strong>.</li>
+            <li><strong style="color: #dd1144;">all(l)</strong>: Devuelve <strong style="color: #dd1144;">True</strong> si todos los elementos de la lista <strong style="color: #dd1144;">l</strong> son <strong style="color: #dd1144;">True</strong> y <strong style="color: #dd1144;">False</strong> en caso contrario.</li>
+            <li><strong style="color: #dd1144;">any(l)</strong>: Devuelve <strong style="color: #dd1144;">True</strong> si algún elemento de la lista <strong style="color: #dd1144;">l</strong> es <strong style="color: #dd1144;">True</strong> y <strong style="color: #dd1144;">False</strong> en caso contrario.</li>
+        </ul><br><br>
+
+        <img src="../img/listas-6.jpg" alt="" class="imagen"><br><br>
+
+        <h2>Operaciones que modifican una lista</h1><br><br>
+
+        <ul class="texto" style="margin: 0%;">
+            <li><strong style="color: #dd1144;">l1 + l2</strong>: Crea una nueva lista concatenan los elementos de la listas <strong style="color: #dd1144;">l1</strong> y <strong style="color: #dd1144;">l2</strong>.</li>
+            <li><strong style="color: #dd1144;">l.append(dato)</strong>: Añade <strong style="color: #dd1144;">dato</strong> al final de la lista <strong style="color: #dd1144;">l</strong>.</li>
+            <li><strong style="color: #dd1144;">l.extend(sequencia)</strong>: Añade los datos de <strong style="color: #dd1144;">sequencia</strong> al final de la lista <strong style="color: #dd1144;">l</strong>.</li>
+            <li><strong style="color: #dd1144;">l.insert(índice, dato)</strong>: Inserta <strong style="color: #dd1144;">dato</strong> en la posición <strong style="color: #dd1144;">índice</strong> de la lista <strong style="color: #dd1144;">l</strong> y desplaza los elementos una posición a partir de la posición índice.</li>
+            <li><strong style="color: #dd1144;">l.pop([índice])</strong>: Devuelve el dato en la posición <strong style="color: #dd1144;">índice</strong> y lo elimina de la lista <strong style="color: #dd1144;">l</strong>, desplazando los elementos por detrás de él una posición hacia delante.</li>
+            <li><strong style="color: #dd1144;">l.sort()</strong>: Ordena los elementos de la lista <strong style="color: #dd1144;">l</strong> de acuerdo al orden predefinido, siempre que los elementos sean comparables.</li>
+            <li><strong style="color: #dd1144;">l.reverse()</strong>: invierte el orden de los elementos de la lista <strong style="color: #dd1144;">l</strong>.</li>
+        </ul><br><br>
+
+        <img src="../img/listas-7.jpg" alt="" class="imagen"><br><br>
+        
+        <br>
+       
+      </div>
+  
+        </main>
+<script src="../js/main.js"></script>
+        
+</body>
+</html>

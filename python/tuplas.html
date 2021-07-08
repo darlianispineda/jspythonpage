@@ -21,7 +21,7 @@
     <main>
       <div class="izquierdo">
         
-        <h1><strong> TEMARIO</strong></h1>
+        <h1><strong>TEMARIO</strong></h1>
   
         <div class="temas">
           <div class="container">
@@ -87,10 +87,10 @@
   <div class="container">
     <div class="principal" ><p >ESTRUCTURAS DE DATOS</p></div>
     
-    <div class="caja" id="caja4">
+    <div class="caja activo" id="caja4">
     <ul class = "lista">
       <li><a class="secundario" href="listas.html">Listas</a></li>
-      <li><a class="secundario" href="tuplas.html">Tuplas</a></li>
+      <li><a class="secundario actual" href="tuplas.html">Tuplas</a></li>
       <li><a class="secundario" href="diccionarios.html">Diccionarios</a></li>
           
             <li class="test1"><a href="pruebas/quiz5.html"> <i class="icon-pencil"></i>TEST</a></li>
@@ -102,10 +102,10 @@
   <div class="container">
     <div class="principal" ><p >PROGRAMACIÓN ORIENTADA A OBJETOS</p></div>
     
-    <div class="caja  activo" id="caja5">
+    <div class="caja" id="caja5">
     <ul class = "lista">
       <li><a class="secundario" href="clases.html">Creación de Clases</a></li>
-      <li><a class="secundario  actual" href="constructor.html">Constructor</a></li>
+      <li><a class="secundario" href="constructor.html">Constructor</a></li>
       <li><a class="secundario" href="metodos.html">Métodos</a></li> 
       <li><a class="secundario" href="herencia.html">Herencia</a></li>      
             <li class="test1"><a href="pruebas/quiz6.html"> <i class="icon-pencil"></i>TEST</a></li>
@@ -132,38 +132,52 @@
       </div>
       <div class ="derecho">
         
-         <h1 class="title">Método constructor</h1>
-        
-       
-         
+         <h1 class="title">Tuplas</h1>
   
-         <p class="texto">Toda clase debe tener un “método constructor “, que es donde se colocan los atributos de la clase. <br><br>
-          Los métodos, se crean como las funciones y deben estar dentro del bloque de código de
-          sus clases, y siempre deben tener como argumento la palabra reservada self. El método
-          constructor debe tener como nombre, init .<br><br>
-          Los atributos, se crean como las variables, sólo que al principio se le coloca la palabra self y
-          luego de un punto el nombre del atributo.
+         <p class="texto">Una <strong>tupla</strong> es una secuencias ordenadas de objetos de distintos tipos.<br><br>
+
+          Se construyen poniendo los elementos entre corchetes <strong style="color: #dd1144;">( )</strong> separados por comas.<br><br>
           
+          Se caracterizan por:
+
+            <ul class="texto" style="margin: 0%;">
+                <li>Tienen orden.</li>
+                <li>Pueden contener elementos de distintos tipos.</li>
+                <li>Son inmutables, es decir, no pueden alterarse durante la ejecución de un programa.</li>
+            </ul>            
         
         </p>
 
-        <img src="../img/constructor1.jpg" alt="" class="imagen">
-
-        <p class="texto">Este es un ejemplo de una clase en python. La clase personaje tiene 2 atributos, vida y
-          poder, primero sus valores se pasan al constructor y luego a ellos. El primer argumento
-          del constructor será el valor del atributo vida y el segundo será el valor del atributo poder.
-          x es un objeto de la clase personaje, los objetos se crean como las variables y se igualan al
-          constructor de la clase que deseemos. Como el constructor admite 2 argumentos, se le
-          colocan dentro de los paréntesis los valores que queremos que posea sus atributos
-          anteriormente definidos en la clase. El 500 se trata del argumento “v” y 15 del argumento
-          “p”.</p>
-
+        <p class="texto">Se usan habitualmente para representar colecciones de datos una determinada estructura semántica, como por ejemplo un vector o una matriz.</p>
         
+        <img src="../img/tuplas-1.jpg" alt="" class="imagen"><br><br>
 
+
+        <h2>Creación de tuplas mediante la función <strong style="color: #dd1144;">tuple()</strong></h1>
+  
+        <p class="texto">Otra forma de crear tuplas es mediante la función <strong style="color: #dd1144;">tuple()</strong>.</p>
+
+        <ul class="texto" style="margin: 0%;">
+            <li><strong style="color: #dd1144;">tuple(c)</strong>: Crea una tupla con los elementos de la secuencia o colección <strong style="color: #dd1144;">c</strong>.</li>
+        </ul>
+
+        <p class="texto">Se pueden indicar los elementos separados por comas, mediante una cadena, o mediante una colección de elementos iterable.</p>
+
+        <img src="../img/tuplas-2.jpg" alt="" class="imagen"><br><br>
+
+
+        <h2>Operaciones con tuplas</h1>
+  
+        <p class="texto">El acceso a los elementos de una tupla se realiza del mismo modo que en las listas. También se pueden obtener subtuplas de la misma manera que las sublistas.
+
+        <br><br>Las operaciones de listas que no modifican la lista también son aplicables a las tuplas.</p>
+
+        <img src="../img/tuplas-3.jpg" alt="" class="imagen"><br><br>
+
+        <br>
        
       </div>
-  
-  
+    
         </main>
 <script src="../js/main.js"></script>
         
